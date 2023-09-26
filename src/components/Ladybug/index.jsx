@@ -1,7 +1,9 @@
 import React from 'react';
 import './style.css';
 
-const Ladybug = ({ posX, posY, orientation }) => {
+const Ladybug = (ladybugState) => {
+  const { posX, posY, orientation } = ladybugState;
+  
   return (
     <div 
       className={`ladybug ladybug--${orientation}`} 
@@ -12,5 +14,4 @@ const Ladybug = ({ posX, posY, orientation }) => {
     />
   );
 };
-
-export default Ladybug;
+export default Ladybug
